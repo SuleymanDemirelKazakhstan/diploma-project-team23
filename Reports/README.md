@@ -1,6 +1,6 @@
 > This folders will contain your reports
 ## Week by week plan
-|...|Gizatov Arsen|Jacky Chan|
+|...|Gizatov Arsen (Backend Developer)|Jacky Chan|
 |---|---|---|
 |Week #6|Make an architecture model at the basic level. Think about the logic of applications and what basic functionality will be involved|Analyze customer expectations|
 |Week #7|Create a relationship between tables. Make a Uml Diagram where the general structure of the service will be clear |Analyze customer expectations|
