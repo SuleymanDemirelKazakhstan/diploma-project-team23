@@ -95,7 +95,8 @@ We will have following pages:
 
 ## Sitemap, Page descriptions
 
-*Display sitemap here*
+![sitemap](https://user-images.githubusercontent.com/74348878/160412845-31f8a3f5-7d26-4ab3-92ec-aca7bd58d5d5.jpg)
+
 
 ## Non-Functional requirements
 *Write non-functional requirements*
