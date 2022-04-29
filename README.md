@@ -3,11 +3,11 @@
 + **Aidana Khassenova** (*180103167*)- iOS developer (GitHub account: *Enovaid*)
 + **Arsen Gizatov** (*180103240*) - Backend Developer (GitHub account: *arsengizatov*)
 + **Diana Kaldybekova** (*180103048*) - UI/UX Designer (GitHub account: *dianakaldybekova*)
-+ **Dias Maidanbekov** (*180103106*) - Backend-End Developer and PM (GitHub account: *WhyDias*)
++ **Dias Maidanbekov** (*180103106*) - Backend-End Developer (GitHub account: *WhyDias*)
 
 ## Project
 Name: Charity Hub
-
+Main goal: An application for various types of charitable activities.
 Desсription: There are a lot of automated services in our city to simplify various life processes. If you want to have a quick meal, use Wolt, Glovo. Need a taxi, delivery? Install Yandex Taxi, Didi. But what if my soul wants to do good and do charity. In personal practice, the fact was noticed that it was rather difficult to find points where one could donate unused things, share food, and keep abreast of charity events of activists. This application could become a single point of all charitable activities. You can join different events or, on the contrary, announce an event. Be aware of food and clothing donations or maybe even find out which orphanages/nursing homes you can visit and help.
 
 ## Alternatives / Market research
@@ -91,7 +91,15 @@ We will have following pages:
 
 ## User stories
 
-*Write your user stories here*
+* As the head of the foundation, I want to register my foundation
+* As a user, I want to see a list of (reliable) funds
+* As a user, I want to see every functionality in one page
+* As a user, I want to see the location of delivery points on the map
+* As a user, I want to see a list of collection of funds
+* As a user, I want to see the required and collected collection amount
+* As the head of the foundation, I want to see a list of user applications
+* As a user, I want to make a donation to a certain fundraise
+...
 
 ## Sitemap, Page descriptions
 
