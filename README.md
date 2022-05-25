@@ -21,10 +21,10 @@ Research alternatives
 Create a single platform for charity and solve the problem of managing a reliable charity fund so that the user is confident in his actions
 
 ## Technologies
-In our project we use **Swift, UiKit, Spring Boot, Docker, Golang, Retool, PostgreSql, Ansible, Firebase**
+In our project we use **Swift, UiKit, Spring Boot, Docker, Golang, Retool, PostgreSql, Ansible, Firebase, AmazonS3**
 
 ## Tools
-**Jira, Figma, Adobe Illustrator, Miro, Visual Paradigm**
+**Jira, Figma, Adobe Illustrator, Miro, DataGrid, Postman, Visual Paradigm, Intellij Idea**
 
 ## Pages / Activities 
 We will have following pages:
