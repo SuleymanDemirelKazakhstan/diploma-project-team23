@@ -121,6 +121,9 @@ We will have following pages:
 
 ## Mockups, Wireframes
 *Put here images of your wireframes*
+![wireframe1](https://user-images.githubusercontent.com/49470772/170222157-419ad500-7c9c-4e16-9335-f528957195c4.jpg)
+![wireframe2](https://user-images.githubusercontent.com/49470772/170222313-755c906e-2017-4e1a-8547-add99a5e6b2a.jpg)
+![mockup](https://user-images.githubusercontent.com/49470772/170222349-38670496-ce96-4f9e-af61-fbbadd7b1a33.jpg)
 
 ## Future iterations
 *Write your future iterations*
