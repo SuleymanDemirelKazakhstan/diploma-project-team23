@@ -107,7 +107,9 @@ We will have following pages:
 
 
 ## Non-Functional requirements
-*Write non-functional requirements*
+1. Organize 10 charity events
+2. Collect the required amount for 2 people through the app
+3. Register 3 foundations
 
 ## Risks
 1. Improper use of restricted gifts
@@ -120,10 +122,11 @@ We will have following pages:
 
 
 ## Mockups, Wireframes
-*Put here images of your wireframes*
 ![wireframe1](https://user-images.githubusercontent.com/49470772/170222157-419ad500-7c9c-4e16-9335-f528957195c4.jpg)
 ![wireframe2](https://user-images.githubusercontent.com/49470772/170222313-755c906e-2017-4e1a-8547-add99a5e6b2a.jpg)
 ![mockup](https://user-images.githubusercontent.com/49470772/170222349-38670496-ce96-4f9e-af61-fbbadd7b1a33.jpg)
 
 ## Future iterations
-*Write your future iterations*
+1. Make a functional for organizing charity events
+2. Integrate the points system for each user who donated
+3. Implement the logic of news and posts about charity
