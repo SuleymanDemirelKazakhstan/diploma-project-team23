@@ -1,0 +1,18 @@
+version: 3.1
+services:
+  db:
+    container_name: sauap-db-test
+    restart: always
+    image: postgres
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_DB: sauap
+      POSTGRES_USER: sauap-test-user
+      POSTGRES_PASSWORD: sauap1123
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
+    driver: local

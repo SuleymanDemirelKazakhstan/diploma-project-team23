@@ -1,0 +1,23 @@
+stages:
+  - build
+  - containerize
+
+build-maven:
+  stage: build
+  image: maven:3-jdk-11
+  script:
+    - echo "Compiling the code"
+    - mvn -DskipTests package
+  artifacts:
+    paths:
+      - target/*.jar
+
+docker-build:
+  image: docker:19.03.12
+  stage: containerize
+  services:
+    - docker:19.03.12-dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t $CI_REGISTRY/arsen.gizatov/sauap-backend .
+    - docker push $CI_REGISTRY/arsen.gizatov/sauap-backend

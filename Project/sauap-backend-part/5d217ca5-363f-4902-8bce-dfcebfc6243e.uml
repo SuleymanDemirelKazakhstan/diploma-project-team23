@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>5d217ca5-363f-4902-8bce-dfcebfc6243e</OriginalElement>
+  <nodes>
+    <node x="446.77962202804844" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.requests_to_foundation</node>
+    <node x="696.0298879202992" y="1070.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.fundraising</node>
+    <node x="954.3669794150182" y="1092.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.donate_goods_schedule</node>
+    <node x="-229.6886674968867" y="580.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.user_cards</node>
+    <node x="1177.7040709097373" y="806.7164148424349">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.donate_goods</node>
+    <node x="650.5592440560968" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundation_has_users</node>
+    <node x="-229.6886674968867" y="1070.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.payments</node>
+    <node x="881.6203106669595" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundations</node>
+    <node x="272.1706102117062" y="1070.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.events_history</node>
+    <node x="0.0" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.users</node>
+    <node x="223.00000000000006" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.user_donation_month</node>
+    <node x="47.74097135740976" y="1070.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.events</node>
+    <node x="495.6002490660027" y="1070.716414842435">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.admin_users</node>
+    <node x="1177.7040709097373" y="569.0">5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundation_credits</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.donate_goods_schedule" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.donate_goods" relationship="REFERENCES">
+      <point x="0.0" y="-160.5" />
+      <point x="1048.8669794150182" y="1057.3582074212175" />
+      <point x="1103.368702226379" y="1057.3582074212175" />
+      <point x="1103.368702226379" y="1003.9546229600876" />
+      <point x="1279.7040709097373" y="1003.9546229600876" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.user_donation_month" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.users" relationship="REFERENCES">
+      <point x="0.0" y="-138.5" />
+      <point x="325.50000000000006" y="461.71855541718554" />
+      <point x="90.0" y="461.71855541718554" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.requests_to_foundation" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundations" relationship="REFERENCES">
+      <point x="46.25" y="-138.5" />
+      <point x="585.5296220280484" y="409.39414694894145" />
+      <point x="982.1203106669595" y="409.39414694894145" />
+      <point x="0.0" y="237.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.user_cards" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.users" relationship="REFERENCES">
+      <point x="0.0" y="-127.5" />
+      <point x="-128.1886674968867" y="505.0" />
+      <point x="90.0" y="505.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundation_has_users" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.users" relationship="REFERENCES">
+      <point x="-43.5" y="-127.5" />
+      <point x="694.0592440560968" y="505.0" />
+      <point x="90.0" y="505.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.fundraising" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundations" relationship="REFERENCES">
+      <point x="0.0" y="-182.5" />
+      <point x="808.0298879202992" y="1044.913082315522" />
+      <point x="848.8716920118505" y="1044.913082315522" />
+      <point x="848.8716920118505" y="483.51556662515566" />
+      <point x="982.1203106669595" y="483.51556662515566" />
+      <point x="0.0" y="237.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundation_credits" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundations" relationship="REFERENCES">
+      <point x="0.0" y="-105.5" />
+      <point x="1266.2040709097373" y="509.5802025941374" />
+      <point x="982.1203106669595" y="509.5802025941374" />
+      <point x="0.0" y="237.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.requests_to_foundation" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.users" relationship="REFERENCES">
+      <point x="-46.25" y="-138.5" />
+      <point x="493.0296220280484" y="505.0" />
+      <point x="90.0" y="505.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundation_has_users" target="5d217ca5-363f-4902-8bce-dfcebfc6243e.TABLE:sauap.public.foundations" relationship="REFERENCES">
+      <point x="43.5" y="-127.5" />
+      <point x="781.0592440560968" y="451.1620827043475" />
+      <point x="982.1203106669595" y="451.1620827043475" />
+      <point x="0.0" y="237.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5224463240078077" showDependencies="false" x="686.8343711083432" y="990.6540002888651" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

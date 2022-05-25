@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://86.107.198.108:5432/sauap
+    username: sauap-test-user
+    password: sauap1123
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    generate-ddl: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sauap.online@gmail.com
+    password: qvgfcqgribnpjdfa
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 15MB
+      max-request-size: 15MB
+
+  security:
+    user:
+      name: admin
+      password: password
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIARNWYKU7PSJVI63WF
+      secret-key: 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
+    region:
+      static: ap-southeast-1
+    stack:
+      auto: false
+
+scheduler:
+  cronMonthlyExpression: 0 45 23 * * *
+
+application:
+  bucket:
+    name: sauap-bucket

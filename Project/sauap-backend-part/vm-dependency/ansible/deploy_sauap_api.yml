@@ -1,0 +1,41 @@
+- name: 'STOP PREVIUS VERSION OF SAUAP_API'
+  hosts: app_servers
+  user: root
+  become: yes
+  tasks:
+    - name: 'stop previus sauap_api service'
+      shell: |
+        docker stop sauap-app
+        docker rm sauap-app
+
+- name: 'REMOVE PREVIUS VERSION OF IMAGE SAUAP_API'
+  hosts: app_servers
+  user: root
+  become: yes
+  tasks:
+    - name: 'remove image sauap_api'
+      shell: |
+        docker rmi registry.gitlab.com/arsen.gizatov/sauap-backend:latest
+    - name: 'pause 5 sec'
+      pause:
+        seconds: 5
+
+- name: 'PULL LATEST IMAGE SAUAP_APP 8080'
+  hosts: app_servers
+  user: root
+  become: yes
+  tasks:
+    - name: 'pull image'
+      shell: |
+        docker pull registry.gitlab.com/arsen.gizatov/sauap-backend:latest
+
+
+- name: 'RUN NEW VERSION OF SAUAP_API'
+  hosts: app_servers
+  user: root
+  become: yes
+  tasks:
+    - name: 'run new sauap_api service'
+      shell: |
+        docker run -d -p 8080:8080 --name sauap-app registry.gitlab.com/arsen.gizatov/sauap-backend:latest
+        echo "Starting service..."
