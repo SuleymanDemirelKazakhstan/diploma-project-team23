@@ -1,0 +1,6 @@
+framework module Pods_SauapTests {
+  umbrella header "Pods-SauapTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

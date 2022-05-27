@@ -1,0 +1,6 @@
+framework module Pods_Sauap {
+  umbrella header "Pods-Sauap-umbrella.h"
+
+  export *
+  module * { export * }
+}

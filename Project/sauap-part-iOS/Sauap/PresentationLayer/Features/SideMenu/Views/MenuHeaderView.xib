@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuHeaderView" customModule="Sauap" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="dUt-2j-h7A" id="30V-Ox-zqu"/>
+                <outlet property="nameLabel" destination="8ti-lt-DxM" id="GwI-Sz-022"/>
+                <outlet property="settingsLabel" destination="gj6-47-HhZ" id="nr0-cs-9bw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nnu-TL-Wlh">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="dUt-2j-h7A">
+                    <rect key="frame" x="21" y="21" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3nx-mf-ZXR"/>
+                        <constraint firstAttribute="width" constant="50" id="uXH-XN-TuP"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qtt-RP-uXt">
+                    <rect key="frame" x="92" y="24.5" width="51.5" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ti-lt-DxM" userLabel="Name">
+                            <rect key="frame" x="0.0" y="0.0" width="51.5" height="23.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="20" name="SFPro-Medium"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj6-47-HhZ" userLabel="Settings">
+                            <rect key="frame" x="0.0" y="26.5" width="51.5" height="16.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Settings">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="14" name="SFPro-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-vM-zd9">
+                    <rect key="frame" x="276" y="38" width="18" height="16.5"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Dud-NP-IXK"/>
+                        <constraint firstAttribute="width" constant="18" id="puO-r2-TAz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xER-QT-apV"/>
+            <color key="backgroundColor" red="0.35294117650000001" green="0.64313725489999995" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="dUt-2j-h7A" firstAttribute="leading" secondItem="xER-QT-apV" secondAttribute="leading" constant="21" id="2vv-zO-APc"/>
+                <constraint firstItem="xER-QT-apV" firstAttribute="trailing" secondItem="aRR-vM-zd9" secondAttribute="trailing" constant="16" id="7Bg-xl-wW1"/>
+                <constraint firstItem="qtt-RP-uXt" firstAttribute="centerY" secondItem="nnu-TL-Wlh" secondAttribute="centerY" id="I37-Co-9EY"/>
+                <constraint firstItem="aRR-vM-zd9" firstAttribute="centerY" secondItem="nnu-TL-Wlh" secondAttribute="centerY" id="WFv-QT-dtD"/>
+                <constraint firstItem="dUt-2j-h7A" firstAttribute="centerY" secondItem="nnu-TL-Wlh" secondAttribute="centerY" id="aXL-lL-5jt"/>
+                <constraint firstItem="qtt-RP-uXt" firstAttribute="leading" secondItem="dUt-2j-h7A" secondAttribute="trailing" constant="21" id="edX-SF-Zjs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.23188405797103" y="285.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="me" width="1552" height="1418"/>
+    </resources>
+</document>

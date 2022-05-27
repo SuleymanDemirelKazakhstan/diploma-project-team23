@@ -1,0 +1,17 @@
+//
+//  Localizable.strings
+//  Sauap
+//
+//  Created by Aidana on 26.03.2022.
+//
+
+"OnboardingSlide.title.welcome" = "Добро пожаловать в Sauap!";
+"OnboardingSlide.title.help" = "Помощь в один клик";
+"OnboardingSlide.title.share" = "Делиться во благо других";
+"OnboardingSlide.title.safe" = "Надежно и безопасно";
+"OnboardingSlide.description.welcome" = "Удобное приложение для\nблаготворительной деятельности.";
+"OnboardingSlide.description.help" = "Пожертвуйте деньги нуждающимся,\nотслеживайте результаты сборов.";
+"OnboardingSlide.description.share" = "Здесь будет текст Здесь будет текст";
+"OnboardingSlide.description.safe" = "Только проверенные фонды, безопасные\nплатежи, прозрачные сборы средств.";
+
+

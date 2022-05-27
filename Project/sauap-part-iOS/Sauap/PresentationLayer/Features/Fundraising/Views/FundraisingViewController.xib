@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FundraisingViewController" customModule="Sauap" customModuleProvider="target">
+            <connections>
+                <outlet property="completedTabButton" destination="ZvQ-xz-Jgq" id="P8Y-rX-reh"/>
+                <outlet property="fundraisingTabButton" destination="wZ2-O0-uFV" id="W8l-cb-evh"/>
+                <outlet property="placeholderView" destination="ob7-cu-Ee5" id="MbK-6E-jc3"/>
+                <outlet property="separatorView" destination="H8g-gv-Fpb" id="I9Q-Am-r29"/>
+                <outlet property="tableView" destination="Gvj-O0-8sb" id="ryI-jM-gNY"/>
+                <outlet property="view" destination="wff-8w-nxF" id="He1-gx-zDI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wff-8w-nxF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-gv-Fpb">
+                    <rect key="frame" x="0.0" y="811" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="XbE-m7-7GS"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="fSQ-MK-jwe">
+                    <rect key="frame" x="36" y="822" width="342" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ2-O0-uFV">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="g7r-1f-VPQ"/>
+                            </constraints>
+                            <color key="tintColor" red="0.35294117650000001" green="0.64313725489999995" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="  Fundraising">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="SFPro-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvQ-xz-Jgq">
+                            <rect key="frame" x="212" y="0.0" width="130" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="0AC-Qb-nRd"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="fundIcon">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="  Follows">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="SFPro-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gvj-O0-8sb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-cu-Ee5" customClass="NoFundsPlaceholder" customModule="Sauap" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Y1k-R2-YJ0"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="H8g-gv-Fpb" firstAttribute="leading" secondItem="wff-8w-nxF" secondAttribute="leading" id="6ZW-eb-GNv"/>
+                <constraint firstItem="H8g-gv-Fpb" firstAttribute="leading" secondItem="wff-8w-nxF" secondAttribute="leading" id="8dL-83-ibo"/>
+                <constraint firstItem="Y1k-R2-YJ0" firstAttribute="bottom" secondItem="H8g-gv-Fpb" secondAttribute="bottom" constant="50" id="KRr-n7-yry"/>
+                <constraint firstAttribute="trailing" secondItem="H8g-gv-Fpb" secondAttribute="trailing" id="NZ5-Pq-Ysc"/>
+                <constraint firstItem="ob7-cu-Ee5" firstAttribute="leading" secondItem="Gvj-O0-8sb" secondAttribute="leading" id="Xzv-HM-MIx"/>
+                <constraint firstItem="Gvj-O0-8sb" firstAttribute="leading" secondItem="Y1k-R2-YJ0" secondAttribute="leading" id="Z9o-3J-X2v"/>
+                <constraint firstItem="Gvj-O0-8sb" firstAttribute="top" secondItem="Y1k-R2-YJ0" secondAttribute="top" id="cBL-OY-9Ey"/>
+                <constraint firstItem="ob7-cu-Ee5" firstAttribute="trailing" secondItem="Gvj-O0-8sb" secondAttribute="trailing" id="eka-HI-2XI"/>
+                <constraint firstItem="ob7-cu-Ee5" firstAttribute="bottom" secondItem="Gvj-O0-8sb" secondAttribute="bottom" id="id2-F2-B5u"/>
+                <constraint firstItem="Gvj-O0-8sb" firstAttribute="trailing" secondItem="Y1k-R2-YJ0" secondAttribute="trailing" id="jrb-Ko-f08"/>
+                <constraint firstItem="ob7-cu-Ee5" firstAttribute="top" secondItem="Gvj-O0-8sb" secondAttribute="top" id="qVc-0u-mWT"/>
+                <constraint firstItem="fSQ-MK-jwe" firstAttribute="centerX" secondItem="wff-8w-nxF" secondAttribute="centerX" id="rQ6-Wh-fQm"/>
+                <constraint firstAttribute="trailing" secondItem="H8g-gv-Fpb" secondAttribute="trailing" id="sT8-io-Exj"/>
+                <constraint firstItem="fSQ-MK-jwe" firstAttribute="top" secondItem="H8g-gv-Fpb" secondAttribute="bottom" constant="10" id="vcz-JJ-MVj"/>
+                <constraint firstItem="fSQ-MK-jwe" firstAttribute="top" secondItem="Gvj-O0-8sb" secondAttribute="bottom" constant="10" id="yCt-EV-foG"/>
+            </constraints>
+            <point key="canvasLocation" x="-257.97101449275362" y="-1266.2946428571429"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fundIcon" width="26" height="18"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

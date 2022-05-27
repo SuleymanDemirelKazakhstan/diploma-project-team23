@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosingViewController" customModule="Sauap" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="OOh-b4-ibH" id="vJg-q7-b9n"/>
+                <outlet property="registrationButton" destination="zxR-Up-wo1" id="70W-At-XfH"/>
+                <outlet property="view" destination="1MM-on-fEs" id="u3O-HO-ZIg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1MM-on-fEs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вступайте в ряды героев!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-kK-M9A">
+                    <rect key="frame" x="66.5" y="152" width="281.5" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизуйтесь для полного доступа к приложению Sauap" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4o-2m-md4">
+                    <rect key="frame" x="44" y="209.5" width="326" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-Lb-w2Y">
+                    <rect key="frame" x="44" y="275" width="326" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxR-Up-wo1">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="53.5"/>
+                            <color key="backgroundColor" red="0.35294118520000001" green="0.64313727620000005" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Зарегестрироваться"/>
+                            <connections>
+                                <action selector="registrationButtonDidPress:" destination="-1" eventType="touchUpInside" id="mY8-ct-ZhH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-b4-ibH">
+                            <rect key="frame" x="0.0" y="66.5" width="326" height="53.5"/>
+                            <color key="backgroundColor" red="0.35294118520000001" green="0.64313727620000005" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="У меня уже есть профиль"/>
+                            <connections>
+                                <action selector="loginButtonDidPress:" destination="-1" eventType="touchUpInside" id="V39-yl-InA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="mDz-rs-8Ik"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="uXV-wt-8pa"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="S4o-2m-md4" firstAttribute="top" secondItem="Tvz-kK-M9A" secondAttribute="bottom" constant="30" id="9MS-sA-d2P"/>
+                <constraint firstItem="Tvz-kK-M9A" firstAttribute="centerX" secondItem="1MM-on-fEs" secondAttribute="centerX" id="JUQ-UR-rnA"/>
+                <constraint firstItem="uXV-wt-8pa" firstAttribute="trailing" secondItem="S4o-2m-md4" secondAttribute="trailing" constant="44" id="PWq-6x-9Gh"/>
+                <constraint firstItem="gBe-Lb-w2Y" firstAttribute="top" secondItem="S4o-2m-md4" secondAttribute="bottom" constant="24.5" id="cy0-tJ-7q4"/>
+                <constraint firstItem="S4o-2m-md4" firstAttribute="leading" secondItem="uXV-wt-8pa" secondAttribute="leading" constant="44" id="hXJ-Od-Bqs"/>
+                <constraint firstItem="Tvz-kK-M9A" firstAttribute="top" secondItem="uXV-wt-8pa" secondAttribute="top" constant="108" id="ifA-UM-pCs"/>
+                <constraint firstItem="gBe-Lb-w2Y" firstAttribute="trailing" secondItem="S4o-2m-md4" secondAttribute="trailing" id="o3f-oz-E0H"/>
+                <constraint firstItem="gBe-Lb-w2Y" firstAttribute="leading" secondItem="S4o-2m-md4" secondAttribute="leading" id="ucm-GX-CwV"/>
+            </constraints>
+            <point key="canvasLocation" x="-257.97101449275362" y="-1266.2946428571429"/>
+        </view>
+    </objects>
+</document>

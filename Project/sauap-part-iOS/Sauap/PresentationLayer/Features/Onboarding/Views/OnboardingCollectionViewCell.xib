@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="9ea-Ps-ZMT" customClass="OnboardingCollectionViewCell" customModule="Sauap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZiM-V5-yNK">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-d3-ZTb">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="525"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-8m-Ouf">
+                        <rect key="frame" x="16" y="525" width="381" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-Hd-YTH">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="74"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation systen for restaurants and cafes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afU-bS-klT">
+                                <rect key="frame" x="0.0" y="90" width="381" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="afU-bS-klT" secondAttribute="bottom" id="Fxc-iZ-BD2"/>
+                            <constraint firstAttribute="trailing" secondItem="afU-bS-klT" secondAttribute="trailing" id="S54-lz-g54"/>
+                            <constraint firstItem="afU-bS-klT" firstAttribute="leading" secondItem="fcP-8m-Ouf" secondAttribute="leading" id="UuJ-oM-sOe"/>
+                            <constraint firstItem="A6X-Hd-YTH" firstAttribute="leading" secondItem="fcP-8m-Ouf" secondAttribute="leading" id="Y0T-KZ-O5q"/>
+                            <constraint firstAttribute="trailing" secondItem="A6X-Hd-YTH" secondAttribute="trailing" id="ge5-99-v06"/>
+                            <constraint firstItem="afU-bS-klT" firstAttribute="top" secondItem="A6X-Hd-YTH" secondAttribute="bottom" constant="16" id="kAx-fP-tVY"/>
+                            <constraint firstItem="A6X-Hd-YTH" firstAttribute="top" secondItem="fcP-8m-Ouf" secondAttribute="top" id="uhl-Fc-5rO"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fcP-8m-Ouf" firstAttribute="leading" secondItem="ZiM-V5-yNK" secondAttribute="leading" constant="16" id="44W-at-liB"/>
+                    <constraint firstItem="WyL-d3-ZTb" firstAttribute="top" secondItem="ZiM-V5-yNK" secondAttribute="top" id="6eM-4z-Yfe"/>
+                    <constraint firstAttribute="bottom" secondItem="fcP-8m-Ouf" secondAttribute="bottom" constant="16" id="9Nt-yr-HLd"/>
+                    <constraint firstItem="WyL-d3-ZTb" firstAttribute="leading" secondItem="ZiM-V5-yNK" secondAttribute="leading" id="EoU-h3-hmH"/>
+                    <constraint firstAttribute="trailing" secondItem="WyL-d3-ZTb" secondAttribute="trailing" id="IuF-5y-Nf2"/>
+                    <constraint firstAttribute="trailing" secondItem="fcP-8m-Ouf" secondAttribute="trailing" constant="16" id="NxV-D0-6FG"/>
+                    <constraint firstItem="fcP-8m-Ouf" firstAttribute="top" secondItem="WyL-d3-ZTb" secondAttribute="bottom" id="aUq-rf-6VT"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="413" height="667"/>
+            <connections>
+                <outlet property="slideDescriptionLabel" destination="afU-bS-klT" id="wdO-Rb-qHJ"/>
+                <outlet property="slideImageView" destination="WyL-d3-ZTb" id="uyY-Ya-r3s"/>
+                <outlet property="slideTitleLabel" destination="A6X-Hd-YTH" id="7me-Ky-6mc"/>
+            </connections>
+            <point key="canvasLocation" x="-707" y="-679"/>
+        </collectionViewCell>
+    </objects>
+</document>

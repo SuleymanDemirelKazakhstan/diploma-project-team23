@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCardViewController" customModule="Sauap" customModuleProvider="target">
+            <connections>
+                <outlet property="CVVTextField" destination="Uvo-kS-dFX" id="nBl-0i-yQr"/>
+                <outlet property="addCardButton" destination="ZsS-6Z-j39" id="mhd-bd-YID"/>
+                <outlet property="cardTextField" destination="Ccb-5l-Z0L" id="ZZx-ih-EpY"/>
+                <outlet property="dateTextField" destination="Jxu-1m-uhd" id="rHO-AE-NDW"/>
+                <outlet property="leftBarButtonItem" destination="eZO-3W-LR5" id="NuY-iE-HS0"/>
+                <outlet property="navigatonItem" destination="nOC-8u-UKc" id="OIT-rR-SED"/>
+                <outlet property="view" destination="w9J-Ja-0WJ" id="JMR-K5-VWN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="w9J-Ja-0WJ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="yyK-7u-Pio">
+                    <rect key="frame" x="20" y="124" width="374" height="144"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-Z1-pmH">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="58.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRj-2B-2Cl">
+                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="16.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Card number">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45257260101010099" green="0.45257260101010099" blue="0.45257260101010099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="14" name="SFPro-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4242 4242 4242 4242" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-5l-Z0L" customClass="DesignableUITextField" customModule="Sauap" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="24.5" width="374" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="374" id="vNe-0N-6gj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="creditcard" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cardTextField:" destination="-1" eventType="editingDidEnd" id="qfJ-aR-Rac"/>
+                                        <action selector="textFieldDidChange:" destination="-1" eventType="valueChanged" id="gan-ij-wpI"/>
+                                        <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="ib7-Kd-rkT"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-2E-wps">
+                            <rect key="frame" x="0.0" y="85.5" width="374" height="58.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3RC-wl-Kqh">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="58.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dV-gl-Vhs">
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="16.5"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Card validity period">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.45257260101010099" green="0.45257260101010099" blue="0.45257260101010099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="14" name="SFPro-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/YY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-1m-uhd">
+                                            <rect key="frame" x="0.0" y="24.5" width="180" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="s65-dw-8VN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="creditcard" catalog="system"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="Jsl-mR-8Eo"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CMc-Q9-aDz">
+                                    <rect key="frame" x="194" y="0.0" width="180" height="58.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJx-mt-k1r">
+                                            <rect key="frame" x="0.0" y="0.0" width="27.5" height="16.5"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="CVV">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.45257260101010099" green="0.45257260101010099" blue="0.45257260101010099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="14" name="SFPro-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="CVV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uvo-kS-dFX">
+                                            <rect key="frame" x="0.0" y="24.5" width="180" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="aT8-bM-YKR"/>
+                                            </constraints>
+                                            <attributedString key="attributedText"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="creditcard" catalog="system"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="textFieldDidChange:" destination="-1" eventType="editingChanged" id="fzk-To-Saw"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsS-6Z-j39">
+                    <rect key="frame" x="20" y="308" width="374" height="48"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="jyn-GE-HDX"/>
+                    </constraints>
+                    <color key="tintColor" red="0.55355128892204342" green="0.74901960784313726" blue="0.65528325777962804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Add a new card">
+                                <attributes>
+                                    <font key="NSFont" size="20" name="SFPro-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addCardButtonDidPress:" destination="-1" eventType="touchUpInside" id="8ty-i6-cda"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3O-Bp-Uzg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="New card" id="nOC-8u-UKc">
+                            <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="eZO-3W-LR5"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="giN-Z6-3BE"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yyK-7u-Pio" firstAttribute="top" secondItem="giN-Z6-3BE" secondAttribute="top" constant="80" id="C4Z-wN-thw"/>
+                <constraint firstItem="ZsS-6Z-j39" firstAttribute="top" secondItem="yyK-7u-Pio" secondAttribute="bottom" constant="40" id="CEh-Kz-maQ"/>
+                <constraint firstItem="giN-Z6-3BE" firstAttribute="trailing" secondItem="yyK-7u-Pio" secondAttribute="trailing" constant="20" id="IDX-RP-WJg"/>
+                <constraint firstItem="giN-Z6-3BE" firstAttribute="trailing" secondItem="ZsS-6Z-j39" secondAttribute="trailing" constant="20" id="LhY-UT-BqK"/>
+                <constraint firstItem="ZsS-6Z-j39" firstAttribute="leading" secondItem="giN-Z6-3BE" secondAttribute="leading" constant="20" id="NYo-gs-jTo"/>
+                <constraint firstItem="yyK-7u-Pio" firstAttribute="leading" secondItem="giN-Z6-3BE" secondAttribute="leading" constant="20" id="SjJ-bb-GWP"/>
+            </constraints>
+            <point key="canvasLocation" x="-539.13043478260875" y="-1205.3571428571429"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Ccb-5l-Z0L">
+            <size key="intrinsicContentSize" width="200" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+    </resources>
+</document>

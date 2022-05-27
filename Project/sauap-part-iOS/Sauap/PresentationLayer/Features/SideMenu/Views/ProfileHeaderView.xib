@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileHeaderView" customModule="Sauap" customModuleProvider="target">
+            <connections>
+                <outlet property="donatedButton" destination="XCa-8o-vY8" id="ThL-RB-Ogg"/>
+                <outlet property="imageView" destination="OxD-rY-ZVb" id="gsn-mn-cwe"/>
+                <outlet property="nameLabel" destination="eit-Z6-nmd" id="RUr-U7-cSy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WVd-z7-qVT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="OxD-rY-ZVb">
+                    <rect key="frame" x="157" y="10" width="100" height="100"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="XDS-JW-SUF"/>
+                        <constraint firstAttribute="width" constant="100" id="pxo-5g-Yuu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eit-Z6-nmd" userLabel="Name">
+                    <rect key="frame" x="0.0" y="114" width="414" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Aidana">
+                            <attributes>
+                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="17" name="SFPro-Semibold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCa-8o-vY8">
+                    <rect key="frame" x="83.5" y="154" width="247" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3ul-RK-QYI"/>
+                        <constraint firstAttribute="width" constant="247" id="aNL-2c-XHl"/>
+                    </constraints>
+                    <color key="tintColor" red="0.35294117650000001" green="0.64313725489999995" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Donated:  1 000 ₸"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="yV8-la-mnN"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XCa-8o-vY8" firstAttribute="top" secondItem="eit-Z6-nmd" secondAttribute="bottom" constant="20" id="3NG-rW-7SD"/>
+                <constraint firstItem="eit-Z6-nmd" firstAttribute="trailing" secondItem="yV8-la-mnN" secondAttribute="trailing" id="4QT-FG-DPF"/>
+                <constraint firstItem="XCa-8o-vY8" firstAttribute="centerX" secondItem="WVd-z7-qVT" secondAttribute="centerX" id="BQn-Cz-SlK"/>
+                <constraint firstItem="OxD-rY-ZVb" firstAttribute="centerX" secondItem="WVd-z7-qVT" secondAttribute="centerX" id="Gag-Aq-OTS"/>
+                <constraint firstItem="OxD-rY-ZVb" firstAttribute="top" secondItem="WVd-z7-qVT" secondAttribute="top" constant="10" id="O5t-Rs-VjF"/>
+                <constraint firstItem="eit-Z6-nmd" firstAttribute="top" secondItem="OxD-rY-ZVb" secondAttribute="bottom" constant="4" id="Wou-qH-hST"/>
+                <constraint firstItem="eit-Z6-nmd" firstAttribute="leading" secondItem="yV8-la-mnN" secondAttribute="leading" id="cEN-bY-zr6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.23188405797103" y="297.32142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="me" width="1552" height="1418"/>
+    </resources>
+</document>
