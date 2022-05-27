@@ -7,7 +7,9 @@
 
 ## Project
 Name: Sauap
+
 Main goal: An application for various types of charitable activities.
+
 Desсription: There are a lot of automated services in our city to simplify various life processes. If you want to have a quick meal, use Wolt, Glovo. Need a taxi, delivery? Install Yandex Taxi, Didi. But what if my soul wants to do good and do charity. In personal practice, the fact was noticed that it was rather difficult to find points where one could donate unused things, share food, and keep abreast of charity events of activists. This application could become a single point of all charitable activities. You can join different events or, on the contrary, announce an event. Be aware of food and clothing donations or maybe even find out which orphanages/nursing homes you can visit and help.
 
 ## Alternatives / Market research
