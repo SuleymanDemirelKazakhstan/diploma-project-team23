@@ -1,4 +1,4 @@
-# CSS 410 Research tools and methods
+# Sauap - iOS application for charity activities
 ## Team members
 + **Aidana Khassenova** (*180103167*)- iOS developer (GitHub account: *Enovaid*)
 + **Arsen Gizatov** (*180103240*) - Backend Developer (GitHub account: *arsengizatov*)
